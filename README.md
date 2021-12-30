@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repo is based on [alexwhen/docker-2048](https://github.com/alexwhen/docker-2048), which is in turn based on [gabrielecirulli/2048](https://github.com/gabrielecirulli/2048).
+This repo is based on [d0-labs/tekton-pipeline-example-pipeline](https://github.com/d0-labs/tekton-pipeline-example-pipeline),which is in turn based on [alexwhen/docker-2048](https://github.com/alexwhen/docker-2048), which is in turn based on [gabrielecirulli/2048](https://github.com/gabrielecirulli/2048).
 
 ## Purpose
 

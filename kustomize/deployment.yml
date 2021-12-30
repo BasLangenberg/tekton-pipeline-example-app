@@ -16,16 +16,17 @@ spec:
         app: 2048-app
     spec:
       containers:
-      - name: 2048-app
-        # Replace with your docker registry info
-        image: <your_docker_registry>/<repo_name>/<image_name>:<tag>
-        ports:
-        - name: http
-          containerPort: 8000
-        env:
-        - name: PORT
-          value: "8000"
-        resources:
-          limits:
-            cpu: "0.1"
-            memory: 100Mi
+        - name: 2048-app
+          image: registry.digitalocean.com/bl-k8s/2048:initial-build-v1
+          ports:
+            - name: http
+              containerPort: 8000
+          env:
+            - name: PORT
+              value: "8000"
+          resources:
+            limits:
+              cpu: "0.1"
+              memory: 100Mi
+      imagePullSecrets:
+        - name: docker-cfg
